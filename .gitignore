@@ -1,0 +1,33 @@
+# Java
+*.class
+*.log
+logs/
+*.jar
+*.war
+hs_err_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Local/Secret Configs
+application-local.yml
+application-dev.yml
+
+# OS generated files
+.DS_Store
+Thumbs.db
