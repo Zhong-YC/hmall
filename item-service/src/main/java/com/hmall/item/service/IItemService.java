@@ -2,9 +2,9 @@ package com.hmall.item.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
-import com.hmall.item.domin.dto.ItemDTO;
-import com.hmall.item.domin.dto.OrderDetailDTO;
-import com.hmall.item.domin.po.Item;
+import com.hmall.item.domain.dto.ItemDTO;
+import com.hmall.item.domain.dto.OrderDetailDTO;
+import com.hmall.item.domain.po.Item;
 
 import java.util.Collection;
 import java.util.List;

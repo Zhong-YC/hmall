@@ -5,9 +5,9 @@ import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.api.client.ItemClient;
-import com.hmall.cart.domin.dto.CartFormDTO;
-import com.hmall.cart.domin.po.Cart;
-import com.hmall.cart.domin.vo.CartVO;
+import com.hmall.cart.domain.dto.CartFormDTO;
+import com.hmall.cart.domain.po.Cart;
+import com.hmall.cart.domain.vo.CartVO;
 import com.hmall.cart.mapper.CartMapper;
 import com.hmall.cart.service.ICartService;
 import com.hmall.common.exception.BizIllegalException;
@@ -17,9 +17,7 @@ import com.hmall.common.utils.UserContext;
 
 import com.hmall.api.dto.ItemDTO;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Collection;
 import java.util.List;
