@@ -42,7 +42,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 //
 //    private final DiscoveryClient discoveryClient;
 
-    private final ItemClient itemClient;
+    private final ItemClient ItemClient;
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
         // 1.获取登录用户
@@ -110,7 +110,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 //            return;
 //        }
 //        List<ItemDTO> items=response.getBody();
-        List<ItemDTO> items=itemClient.queryItemByIds(itemIds);
+        List<ItemDTO> items= ItemClient.queryItemByIds(itemIds);
         if(CollUtil.isEmpty(items)){
             return;
         }
